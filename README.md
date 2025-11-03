@@ -14,7 +14,7 @@ O arquivo `Program.cs` imprime uma mensagem de boas-vindas e lista os argumentos
 
 ## Como executar
 
-1. Instale o [.NET SDK](https://dotnet.microsoft.com/en-us/download](https://dotnet.microsoft.com/pt-br/download) (versão 7.0 ou superior).
+1. Instale o [.NET SDK](https://dotnet.microsoft.com/en-us/download) (versão 7.0 ou superior).
 2. No diretório raiz do repositório, execute:
 
    ```bash
