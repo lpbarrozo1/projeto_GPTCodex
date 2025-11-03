@@ -57,6 +57,19 @@ No diretório raiz deste repositório, execute:
 dotnet run --project ProjetoBase
 ```
 
+> ⚠️ **Importante:** quando estiver dentro da pasta `ProjetoBase/`, **não** repita o comando anterior com `--project ProjetoBase`. Esse caminho passa a apontar para uma subpasta inexistente e provoca o erro `MSB1009: Arquivo de projeto não existe`. Use um destes comandos no PowerShell ou no Prompt de Comando:
+>
+> ```powershell
+> dotnet run
+> ```
+>
+> ou
+>
+> ```powershell
+> dotnet run --project .\\ProjetoBase.csproj
+> ```
+>
+> Note o prefixo `./` (ou `.\` no Windows), que indica explicitamente o arquivo de projeto localizado no diretório atual.
 > 💡 **Dica:** se você já estiver dentro da pasta `ProjetoBase/`, execute apenas `dotnet run` (sem o parâmetro `--project`) ou informe o arquivo explícito: `dotnet run --project ProjetoBase.csproj`. Isso evita o erro `MSB1009: Arquivo de projeto não existe` causado por apontar para um caminho inexistente.
 
 O servidor de desenvolvimento será iniciado e exibirá os endereços HTTP/HTTPS no terminal. Abra um navegador e acesse a URL informada (por padrão, `https://localhost:7283` ou `http://localhost:5283`).
