@@ -1,5 +1,6 @@
 var builder = WebApplication.CreateBuilder(args);
 
+// registra MVC
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
