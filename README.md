@@ -82,7 +82,7 @@ O arquivo `Program.cs` imprime uma mensagem de boas-vindas e lista os argumentos
 2. No diretório raiz do repositório, execute:
 
    ```bash
-   dotnet run --project ProjetoBase
+   dotnet run
    ```
 
 Para compilar sem executar, use `dotnet build ProjetoBase`.
